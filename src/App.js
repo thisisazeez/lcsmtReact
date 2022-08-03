@@ -1,29 +1,29 @@
 import React from "react";
 import Bike from './components/Bike'
 
-function Good(){
-  return (
-    <div className="Good">
-      <h1>This is Good</h1>
-    </div>
-  )
-}
+// function Good(){
+//   return (
+//     <div className="Good">
+//       <h1>This is Good</h1>
+//     </div>
+//   )
+// }
 
-function Bad(){
-  return (
-    <div className="Bad">
-      <h1>This is Bad</h1>
-    </div>
-  )
-}
+// function Bad(){
+//   return (
+//     <div className="Bad">
+//       <h1>This is Bad</h1>
+//     </div>
+//   )
+// }
 
-function Either(props){
-  const isGood = props.isGood;
-  if (isGood) {
-    return <Good/>;
-  }
-  return <Bad/>;
-}
+// function Either(props){
+//   const isGood = props.isGood;
+//   if (isGood) {
+//     return <Good/>;
+//   }
+//   return <Bad/>;
+// }
 
 
 function App() {
@@ -44,7 +44,7 @@ return(
         {bikes.map((bikes) => <Bike key={bikes.id} brand={bikes.brand}/>)}
       </ul> */}
       <hr/>
-      <Either isGood={true}/>
+      {/* <Either isGood={true}/> */}
     </div>
   )
 }
