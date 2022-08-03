@@ -27,10 +27,22 @@ function Either(props){
 
 
 function App() {
+  const bikes = ['Suzuki', 'BMW', 'Benz']
+  // const bikes = [
+  //   {id:1, brand:'Ford'},
+  //   {id:2, brand:'Suzuki'},
+  //   {id:3, brand:'BMW'}
+  // ]
 return(
     <div className="App">
-      <hr/>
-      <Bike name="Suzuki" model="3000"/>
+
+      <h3>How many bikes do we have ?</h3>
+      <ul>
+        {bikes.map((bikes) => <Bike brand={bikes}/>)}
+      </ul>
+      {/* <ul>
+        {bikes.map((bikes) => <Bike key={bikes.id} brand={bikes.brand}/>)}
+      </ul> */}
       <hr/>
       <Either isGood={true}/>
     </div>
