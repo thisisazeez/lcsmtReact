@@ -27,7 +27,7 @@ function Either(props){
 
 
 function App() {
-  const bikes = ['Suzuki', 'BMW', 'Benz']
+  const bikes = ['Suzuki', 'BMW', 'Benz'] // list = bikes data = stored in the list `bikes`
   // const bikes = [
   //   {id:1, brand:'Ford'},
   //   {id:2, brand:'Suzuki'},
@@ -38,7 +38,7 @@ return(
 
       <h3>How many bikes do we have ?</h3>
       <ul>
-        {bikes.map((bikes) => <Bike brand={bikes}/>)}
+        {bikes.map((bikes) => <Bike brand={bikes}/>)} {/* rendering the list to our bike component */}
       </ul>
       {/* <ul>
         {bikes.map((bikes) => <Bike key={bikes.id} brand={bikes.brand}/>)}
